@@ -1,0 +1,33 @@
+{
+  "table": "verification_token",
+  "columns": [
+    {
+      "name": "identifier",
+      "type": "text",
+      "pk": true,
+      "nullable": false,
+      "unique": false,
+      "default": null,
+      "description": "Email address the token was sent to."
+    },
+    {
+      "name": "token",
+      "type": "text",
+      "pk": true,
+      "nullable": false,
+      "unique": false,
+      "default": null,
+      "description": "Single-use random token."
+    },
+    {
+      "name": "expires",
+      "type": "timestamptz",
+      "pk": false,
+      "nullable": false,
+      "unique": false,
+      "default": null,
+      "description": "Token expiry."
+    }
+  ],
+  "rows": []
+}
