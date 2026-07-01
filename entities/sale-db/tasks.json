@@ -1,0 +1,83 @@
+{
+  "table": "tasks",
+  "columns": [
+    {
+      "name": "id",
+      "type": "UUID",
+      "pk": true,
+      "check_constraint": null,
+      "nullable": false
+    },
+    {
+      "name": "title",
+      "type": "TEXT",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    },
+    {
+      "name": "description",
+      "type": "TEXT",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    },
+    {
+      "name": "due_date",
+      "type": "TIMESTAMPTZ",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    },
+    {
+      "name": "priority",
+      "type": "TEXT",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    },
+    {
+      "name": "related_type",
+      "type": "TEXT",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    },
+    {
+      "name": "related_id",
+      "type": "UUID",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": false
+    },
+    {
+      "name": "assignee_id",
+      "type": "UUID",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": false
+    },
+    {
+      "name": "created_at",
+      "type": "TIMESTAMPTZ",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    },
+    {
+      "name": "updated_at",
+      "type": "TIMESTAMPTZ",
+      "pk": false,
+      "check_constraint": null,
+      "nullable": true
+    }
+  ],
+  "rows": []
+}
